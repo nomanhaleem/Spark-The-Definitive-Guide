@@ -1,4 +1,5 @@
 from pyspark.ml.feature import VectorAssembler
+
 va = VectorAssembler()\
   .setInputCols(["Quantity", "UnitPrice"])\
   .setOutputCol("features")
